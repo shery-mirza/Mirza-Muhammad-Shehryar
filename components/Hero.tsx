@@ -7,14 +7,15 @@ import { DownloadOutlined, ProjectOutlined } from "@ant-design/icons";
 export default function Hero() {
   return (
     <section className="min-h-screen flex items-center px-4 sm:px-6 py-12">
-      
+
       <div className="max-w-7xl mx-auto w-full grid md:grid-cols-2 gap-10 items-center">
-        
+
         {/* Image → Top on Mobile */}
         <div className="flex justify-center md:order-2">
-          <div className="relative w-56 h-56 sm:w-64 sm:h-64 md:w-96 md:h-[420px]">
+          <div className="relative w-56 h-56 sm:w-64 sm:h-64 md:w-96 md:h-[490px]">
             <Image
-              src="/PFP.png"
+              src="/transparent.png"
+              style={{ backgroundColor: "#045FD0", objectFit: "cover" }}
               alt="Shery"
               fill
               className="object-cover rounded-2xl border border-gray-800 shadow-xl"
@@ -25,7 +26,7 @@ export default function Hero() {
 
         {/* Text Content */}
         <div className="text-center md:text-left md:order-1">
-          
+
           {/* Heading */}
           <h2
             className="
@@ -48,9 +49,11 @@ export default function Hero() {
               mx-auto md:mx-0
             "
           >
-            I'm a Front-End Web Developer specializing in building modern,
-            high-performance web applications using Next.js, HTML, CSS,
-            React, and Tailwind CSS.
+            I'm a Full Stack Web Developer specializing in building modern,
+            high-performance web applications using Next.js, React, Node.js, HTML,
+            CSS, Tailwind CSS, and databases.
+            I focus on creating scalable, responsive, and user-friendly solutions
+            across both frontend and backend.
           </p>
 
           {/* Paragraph 2 */}
@@ -63,9 +66,9 @@ export default function Hero() {
               mx-auto md:mx-0
             "
           >
-            I love crafting beautiful UI, functional web and
-            seamless user experiences. Currently focused on SaaS apps,
-            trading dashboards, and AI-powered tools.
+            I love crafting beautiful UIs, building powerful web applications,
+            and creating seamless user experiences. Currently focused on full-stack development,
+            SaaS applications, trading dashboards, and AI-powered tools.
           </p>
 
           {/* Buttons */}
@@ -76,7 +79,7 @@ export default function Hero() {
               justify-center md:justify-start
             "
           >
-            
+
             {/* View Projects */}
             <Button
               type="primary"
