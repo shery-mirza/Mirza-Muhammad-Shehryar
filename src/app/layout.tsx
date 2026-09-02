@@ -1,10 +1,9 @@
-import "./globals.css";
-import Navbar from "../../components/Navbar";
-import Footer from "../../components/Footer";
+import './globals.css';
+import type { Metadata } from 'next';
 
-export const metadata = {
-  title: "My Portfolio",
-  description: "Modern Next.js Portfolio",
+export const metadata: Metadata = {
+  title: 'Mirza Muhammad Shehryar | Portfolio',
+  description: 'Professional full-stack developer',
 };
 
 export default function RootLayout({
@@ -14,11 +13,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-black text-white">
-        <Navbar />
-        {children}
-        <Footer />
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
