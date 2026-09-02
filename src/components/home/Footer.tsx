@@ -4,7 +4,7 @@ export default function Footer() {
       <div className="mx-auto flex max-w-7xl flex-col justify-between gap-3 text-xs text-white/30 sm:flex-row">
 
         <span>
-          © 2026 Your Name. All rights reserved.
+          © 2026 Shehryar. All rights reserved.
         </span>
 
         <span>

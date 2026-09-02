@@ -25,10 +25,12 @@ export default function Contact() {
         </p>
 
         <a
-          href="mailto:hello@example.com"
+          href="mailto:sherymirzashuja10@gmail.com"
           className="mt-9 inline-flex items-center gap-2 rounded-full bg-white px-6 py-3.5 text-sm font-semibold text-black"
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          hello@example.com
+          sherymirzashuja10@gmail.com
           <ArrowUpRight size={17} />
         </a>
 

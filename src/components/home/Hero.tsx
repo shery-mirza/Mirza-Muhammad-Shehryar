@@ -96,12 +96,6 @@ export default function Hero() {
             >
               <Mail size={21} />
             </a>
-
-            <span className="h-px w-20 bg-white/10" />
-
-            <span className="text-xs tracking-widest">
-              01 / 04
-            </span>
           </div>
         </motion.div>
 
