@@ -31,9 +31,8 @@ export default function ProjectCard({
             {project.title}
           </h3>
 
-          <p className="mt-2 text-sm text-white/40">
-            A polished, responsive application designed around
-            performance, usability and a scalable technical foundation.
+          <p className="mt-2 text-sm leading-6 text-white/40">
+            {project.description}
           </p>
         </div>
 

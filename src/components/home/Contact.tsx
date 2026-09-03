@@ -26,12 +26,11 @@ export default function Contact() {
 
         <a
           href="mailto:sherymirzashuja10@gmail.com"
-          className="mt-9 inline-flex items-center gap-2 rounded-full bg-white px-6 py-3.5 text-sm font-semibold text-black"
+          className="mt-9 inline-flex items-center gap-1.5 rounded-full bg-white px-4 py-2.5 text-xs font-semibold text-black sm:gap-2 sm:px-6 sm:py-3.5 sm:text-sm"
           target="_blank"
-          rel="noopener noreferrer"
         >
           sherymirzashuja10@gmail.com
-          <ArrowUpRight size={17} />
+          <ArrowUpRight size={15} className="sm:h-[17px] sm:w-[17px]" />
         </a>
 
       </div>

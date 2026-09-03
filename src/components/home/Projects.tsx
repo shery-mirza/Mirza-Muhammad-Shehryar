@@ -16,7 +16,7 @@ export default function Projects() {
         <h2 className="text-4xl font-semibold tracking-tight sm:text-6xl">
           Featured{" "}
           <span className="text-white/35">
-            projects (Under development)
+            projects
           </span>
         </h2>
 
