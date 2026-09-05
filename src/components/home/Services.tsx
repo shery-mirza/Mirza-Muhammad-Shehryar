@@ -27,11 +27,15 @@ export default function Services() {
               ({ number, title, description, icon: Icon }) => (
                 <div
                   key={number}
-                  className="bg-[#0b0b0f] p-7 transition hover:bg-white/[.04]"
+                  className="group bg-[#0b0b0f] p-7 transition-colors duration-200 hover:bg-white/[.04]"
                 >
                   <div className="mb-12 flex items-center justify-between text-xs text-white/25">
                     <span>{number}</span>
-                    <Icon size={20} />
+                    <Icon
+                      size={20}
+                      aria-hidden="true"
+                      className="transition-colors duration-200 group-hover:text-white/60"
+                    />
                   </div>
 
                   <h3 className="text-xl font-semibold">

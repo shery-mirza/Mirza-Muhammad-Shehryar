@@ -20,18 +20,35 @@ export default function About() {
         </div>
 
         <div className="text-lg leading-8 text-white/55">
-          <p>
-            I create modern digital experiences where thoughtful design
-            meets dependable engineering. My focus is writing maintainable
-            code, solving real product problems and shipping work that
-            feels polished.
-          </p>
+          <div className="space-y-6">
+            <p>
+              I create modern digital experiences where thoughtful design
+              meets dependable engineering. My focus is writing maintainable
+              code, solving real product problems and shipping work that
+              feels polished.
+            </p>
 
-          <p className="mt-6">
-            Whether it's a marketing site, SaaS platform, dashboard or
-            custom web application, I can take a project from architecture
-            to deployment.
-          </p>
+            <p>
+              Whether it's a marketing site, SaaS platform, dashboard or
+              custom web application, I can take a project from architecture
+              to deployment.
+            </p>
+          </div>
+
+          <div className="mt-10 grid grid-cols-3 gap-6 border-t border-white/10 pt-8">
+            <div>
+              <p className="text-3xl font-semibold text-white">15+</p>
+              <p className="mt-1 text-sm text-white/40">Projects delivered</p>
+            </div>
+            <div>
+              <p className="text-3xl font-semibold text-white">5+</p>
+              <p className="mt-1 text-sm text-white/40">Years experience</p>
+            </div>
+            <div>
+              <p className="text-3xl font-semibold text-white">10+</p>
+              <p className="mt-1 text-sm text-white/40">Happy clients</p>
+            </div>
+          </div>
         </div>
 
       </div>

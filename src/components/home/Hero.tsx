@@ -1,6 +1,7 @@
 "use client"
 
-import { motion } from "framer-motion"
+import { motion, useReducedMotion } from "framer-motion"
+import Image from "next/image"
 import {
   ArrowUpRight,
   PhoneIcon,
@@ -9,6 +10,8 @@ import {
 } from "lucide-react"
 
 export default function Hero() {
+  const shouldReduceMotion = useReducedMotion()
+
   return (
     <section
       id="home"
@@ -20,7 +23,7 @@ export default function Hero() {
 
         {/* Left */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={shouldReduceMotion ? false : { opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
         >
@@ -68,6 +71,8 @@ export default function Hero() {
               href="https://wa.me/923065340366"
               className="hover:text-green-400"
               target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Chat on WhatsApp"
             >
               <PhoneIcon size={18} />
             </a>
@@ -76,9 +81,11 @@ export default function Hero() {
               href="https://www.linkedin.com/in/mirza-muhammad-shehryar"
               className="hover:text-[#0A66C2]"
               target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View LinkedIn profile"
             >
               <svg
-                aria-label="LinkedIn"
+                aria-hidden="true"
                 role="img"
                 viewBox="0 0 24 24"
                 width="21"
@@ -92,7 +99,7 @@ export default function Hero() {
             <a
               href="mailto:sherymirzashuja10@gmail.com"
               className="hover:text-red-400"
-              target="_blank"
+              aria-label="Send an email"
             >
               <Mail size={21} />
             </a>
@@ -101,7 +108,7 @@ export default function Hero() {
 
         {/* Right */}
         <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
+          initial={shouldReduceMotion ? false : { opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.15 }}
           className="relative mx-auto w-full max-w-md"
@@ -111,10 +118,13 @@ export default function Hero() {
             <div className="relative h-full overflow-hidden rounded-[1.5rem] border border-white/10 bg-[#0b0b0f]">
 
               {/* Image */}
-              <img
+              <Image
                 src="/transparent.png"
-                alt="Full-stack developer"
-                className="absolute inset-0 h-full w-full object-cover"
+                alt="Portrait of Mirza Muhammad Shehryar, full-stack developer"
+                fill
+                priority
+                sizes="(max-width: 768px) 100vw, 448px"
+                className="object-cover"
               />
 
               {/* Dark gradient so text stays readable */}
@@ -126,7 +136,7 @@ export default function Hero() {
                 {/* Header */}
                 <div className="flex items-center justify-between text-xs text-white/60">
                   <span>FULL-STACK / 2026</span>
-                  <Sparkles size={15} />
+                  <Sparkles size={15} aria-hidden="true" />
                 </div>
 
                 {/* Skills */}
@@ -134,14 +144,12 @@ export default function Hero() {
 
                   <div className="rounded-xl border border-white/15 bg-black/30 p-4 backdrop-blur-md">
                     <b className="text-white">Frontend</b>
-                    <br />
-                    Tailwind CSS · Javascript · React · Next.js
+                    <span className="mt-1 block">Tailwind CSS · Javascript · React · Next.js</span>
                   </div>
 
                   <div className="rounded-xl border border-white/15 bg-black/30 p-4 backdrop-blur-md">
                     <b className="text-white">Backend</b>
-                    <br />
-                    Node.js · Express.js · MongoDB · PostgreSQL
+                    <span className="mt-1 block">Node.js · Express.js · MongoDB · PostgreSQL</span>
                   </div>
 
                 </div>

@@ -1,4 +1,4 @@
-import { ArrowUpRight } from "lucide-react"
+import { ArrowUpRight, MessageCircle } from "lucide-react"
 
 export default function Contact() {
   return (
@@ -24,14 +24,29 @@ export default function Contact() {
           want to go. I'll help turn it into a clear technical plan.
         </p>
 
-        <a
-          href="mailto:sherymirzashuja10@gmail.com"
-          className="mt-9 inline-flex items-center gap-1.5 rounded-full bg-white px-4 py-2.5 text-xs font-semibold text-black sm:gap-2 sm:px-6 sm:py-3.5 sm:text-sm"
-          target="_blank"
-        >
-          sherymirzashuja10@gmail.com
-          <ArrowUpRight size={15} className="sm:h-[17px] sm:w-[17px]" />
-        </a>
+        <p className="mt-3 text-sm text-white/30">
+          Usually responds within 24 hours.
+        </p>
+
+        <div className="mt-9 flex flex-wrap gap-4">
+          <a
+            href="mailto:sherymirzashuja10@gmail.com"
+            className="inline-flex items-center gap-1.5 rounded-full bg-white px-4 py-2.5 text-xs font-semibold text-black sm:gap-2 sm:px-6 sm:py-3.5 sm:text-sm"
+          >
+            sherymirzashuja10@gmail.com
+            <ArrowUpRight size={15} className="sm:h-[17px] sm:w-[17px]" />
+          </a>
+
+          <a
+            href="https://wa.me/923065340366"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 rounded-full border border-white/20 px-4 py-2.5 text-xs font-semibold text-white sm:gap-2 sm:px-6 sm:py-3.5 sm:text-sm hover:bg-white/5"
+          >
+            <MessageCircle size={15} className="sm:h-[17px] sm:w-[17px]" />
+            WhatsApp
+          </a>
+        </div>
 
       </div>
     </section>
