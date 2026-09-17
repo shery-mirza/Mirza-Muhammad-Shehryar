@@ -119,7 +119,7 @@ export default function Hero() {
 
               {/* Image */}
               <Image
-                src="/transparent.png"
+                src="/images/transparent.png"
                 alt="Portrait of Mirza Muhammad Shehryar, full-stack developer"
                 fill
                 priority
