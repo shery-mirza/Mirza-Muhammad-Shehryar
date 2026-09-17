@@ -79,7 +79,7 @@ export const projects: Project[] = [
         type: "Education - LMS · Full-stack",
         description:
             "Pakistan's MDCAT preparation platform, 174000+ MCQs, 150+ past papers, custom quiz builder, and per-option explanations.",
-        image: "/logo1.png",
+        image: "/images/logo1.png",
         link: "https://preptitanslms.com/",
     },
     {
@@ -88,7 +88,7 @@ export const projects: Project[] = [
         type: "Shopify Store · Next.js",
         description:
             "Shopify-powered sound wave generator store built with a modern, responsive interface and seamless e-commerce experience.",
-        image: "/sound wave generator.png",
+        image: "/images/sound wave generator.png",
         link: "https://wavevisual.com/",
     },
     {
@@ -97,7 +97,7 @@ export const projects: Project[] = [
         type: "Medical Website · Full-stack",
         description:
             "A modern pharmacy e-commerce platform with a clean, intuitive interface for discovering and purchasing healthcare products online.",
-        image: "/logo.svg",
+        image: "/images/logo.svg",
         link: "https://www.apotheek.nl/",
     },
     {
@@ -106,7 +106,25 @@ export const projects: Project[] = [
         type: "Trading Demo Website · Next.js + Python",
         description:
             "A simulated trading platform with real-time market data and a polished interface, built as a university project (not a live trading product).",
-        image: "/Stress Traders.png",
+        image: "/images/Stress Traders.png",
         link: "https://stress-traders.vercel.app/",
+    },
+    {
+        id: "aurelia-store",
+        title: "Aurelia",
+        type: "Shopify Store · Next.js",
+        description:
+            "A store designed to showcase the skills to develop any kind of E-commerce web, shopify stores with modern techniques and tools.",
+        image: "/images/Aurelia Store.png",
+        link: "https://aurelia-store-mu.vercel.app/",
+    },
+    {
+        id: "wavelength-saas-dashboard",
+        title: "Wavelength SaaS Dashboard",
+        type: "SaaS Dashboard · React + Node.js",
+        description:
+            "A comprehensive dashboard for managing and monitoring SaaS applications, featuring real-time analytics and a user-friendly interface.",
+        image: "/images/wavelength.png",
+        link: "https://demo-saas-dashboard.vercel.app/",
     },
 ]

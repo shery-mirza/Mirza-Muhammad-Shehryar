@@ -86,9 +86,8 @@ export default function Navbar() {
       {/* Mobile Navigation */}
       <div
         id="mobile-menu"
-        className={`overflow-hidden border-t border-white/10 bg-[#07070a]/95 transition-all duration-300 ease-in-out md:hidden ${
-          isOpen ? "max-h-[28rem] opacity-100" : "max-h-0 opacity-0"
-        }`}
+        className={`overflow-hidden border-t border-white/10 bg-[#07070a]/95 transition-all duration-300 ease-in-out md:hidden ${isOpen ? "max-h-[28rem] opacity-100" : "max-h-0 opacity-0"
+          }`}
       >
         <div className="flex flex-col gap-5 px-6 py-6">
           {links.map((link) => (
