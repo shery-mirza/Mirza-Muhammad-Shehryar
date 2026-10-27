@@ -127,4 +127,13 @@ export const projects: Project[] = [
         image: "/images/wavelength.png",
         link: "https://demo-saas-dashboard.vercel.app/",
     },
+    {
+        id: "Restaurant Demo",
+        title: "Restaurant Demo",
+        type: "Restaurant Website · React + Next.js",
+        description:
+            "A demo restaurant web that showcase premium UI and modern design along with the professional functionality. New idea are in.",
+        image: "/images/jumbo.png",
+        link: "https://jumbo-chi.vercel.app/",
+    },
 ]
